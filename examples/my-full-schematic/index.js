@@ -9,6 +9,7 @@ function default_1(options) {
         (_tree, context) => {
             // Show the options for this Schematics.
             context.logger.info('My Full Schematic: ' + JSON.stringify(options));
+            context.logger.info('Test message' + JSON.stringify(_tree.root.path));
         },
         // The schematic Rule calls the schematic from the same collection, with the options
         // passed in. Please note that if the schematic has a schema, the options will be

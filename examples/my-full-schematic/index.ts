@@ -19,6 +19,7 @@ export default function (options: any): Rule {
     (_tree: Tree, context: SchematicContext) => {
       // Show the options for this Schematics.
       context.logger.info('My Full Schematic: ' + JSON.stringify(options));
+      context.logger.info('Test message' + JSON.stringify(_tree.root.path));
     },
 
     // The schematic Rule calls the schematic from the same collection, with the options

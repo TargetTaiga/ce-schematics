@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/schema",
+	"id": "MyFullSchematicsSchema",
+	"title": "My Full Schematics Schema",
+	"type": "object",
+	"properties": {
+		"index": {
+			"type": "number",
+			"default": 1
+		},
+		"name": {
+			"type": "string"
+		},
+		"path": {
+			"type": "string",
+			"format": "path",
+			"description": "The path to create the class.",
+			"visible": false
+		}
+	},
+	"required": [
+		"name"
+	]
+}
